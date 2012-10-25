@@ -1,0 +1,17 @@
+.sidebar .nav {
+	.ProfilePhotoSmall {
+		width: 20px;
+		height: 20px;
+		float: left;
+		margin-right: 8px;
+	}
+}
+
+.Count {
+	text-shadow: none;
+}
+
+.BoxNewDiscussion + *,
+.PhotoWrapLarge + * {
+	margin-top: 20px;
+}

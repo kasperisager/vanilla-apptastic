@@ -1,0 +1,694 @@
+// Basic HTML Elements
+// --------------------------------------------------------------------------------------------------- //
+	
+	* {
+		-webkit-font-smoothing: antialiased;
+		font-smoothing: always;
+		word-wrap: break-word;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	
+	ol, ul {
+		margin: 0;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 300;
+	}
+	
+	h1.H {
+		margin-top: 0;
+	}
+	
+	form {
+		margin: 0;
+	}
+
+
+// Buttons, Inputs and Textareas
+// --------------------------------------------------------------------------------------------------- //
+	
+	// Grouped Buttons
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.ButtonGroup {
+		/*.btn {
+			&:first-child {
+				display: block;
+				margin-right: 25px;
+			}
+		}
+		.Handle {
+			float: right;
+			width: 26px;
+			max-width: 26px;
+			margin-top: -30px;
+		}*/
+		&.Big {
+			.btn {
+				height: 40px;
+				&:first-child {
+					display: block;
+					margin-right: 35px;
+				}
+			}
+			.Handle {
+				width: 36px;
+				max-width: 36px;
+				margin-top: -40px;
+			}
+			.Dropdown {
+				width: 100%;
+			}
+		}
+	}
+	
+	// Inputs and textareas
+	// ----------------------------------------------------------------------------------------------- //
+	
+	input, textarea {
+		&:focus {
+			background-color: @inputBackground; }
+		&.DateBox,
+		&.InputBox,
+		&.SmallInput,
+		textarea {
+			min-height: 30px;
+			font-family: @sansFontFamily;
+		}
+	}
+	
+	input {
+		height: auto !important;
+		&.InputBox:focus {
+			background-color: @inputBackground;
+		}
+		&.search-query {
+			min-height: 30px;
+		}
+	}
+	
+	.TextBoxWrapper {
+		padding-right: 0;
+		position: relative;
+	}
+	
+	// Labels
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.DiscussionForm .PostOptions label {
+		display: inline-block;
+	}
+	
+	body.Entry form ul li label {
+		&.checkbox, &.radio {
+			padding: 0 0 0 18px;
+		}
+	}
+	
+
+// Main Navigation
+// --------------------------------------------------------------------------------------------------- //
+	
+	.navbar-fixed-top {
+		a {
+			i {
+				.opacity(50);
+			}
+			&:hover i {
+				.opacity(100);
+			}
+		}
+		.search-query {
+			min-width: 260px;
+		}
+	}
+	
+	
+// Subheader Content
+// --------------------------------------------------------------------------------------------------- //
+	
+	.breadcrumb {
+		padding: 0; 
+		text-align: left;
+		.border-radius(0);
+		.Breadcrumbs {
+			display: inline-block;
+			text-shadow: 0 1px 0 @white;
+			.Crumb {
+				padding: 0 5px;
+				.hide-text;
+				&:after {
+					color: @grayLight;
+					font-family: @sansFontFamily;
+					font-size: 14px;
+					content: "/ ";
+				}
+			}
+			.CrumbLabel:last-child a {
+				color: @grayLight;
+			}
+		}
+		li {
+			display: block;
+		}
+	}
+
+
+// Content Pane
+// --------------------------------------------------------------------------------------------------- //
+	
+	.main .BoxFilter {
+		display: none;
+	}
+	
+	// Discussions
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.Discussion .PageTitle h1 {
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	
+	.DiscussionHeader {
+		margin-bottom: 0;
+	}
+	
+	.ItemDiscussion {
+		padding: 8px 0;
+		margin: 0;
+		.Message {
+			font-size: 100%;
+			padding-top: 5px;
+		}
+	}
+	
+	.MessageForm h2 {
+		margin-top: 0;
+		font-size: 24px;
+		line-height: 1.2;
+	}
+	
+	.BeforeCommentHeading {
+		margin-bottom: 10px;
+	}
+	
+	h2.CommentHeading {
+		margin-top: 0;
+		font-size: 18px;
+		line-height: 1.2;
+	}
+	
+	
+	.MessageList .Message {
+		padding-top: 0;
+		margin-top: 8px;
+	}
+	
+	.Message {
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	.Category label {
+		display: inline;
+	}
+	
+	.AdminCheck input {
+		vertical-align: top;
+	}
+	
+	// Data Tables
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.DataTable {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		thead td {
+			padding: 8px 4px;
+			vertical-align: middle;
+			border-top: 1px solid lighten(@tableBorder, 6%);
+			border-bottom: 1px solid lighten(@tableBorder, 6%);
+		}
+		tbody .BlockColumn {
+			padding: 12px 4px;
+		}
+		td {
+			vertical-align: middle;
+			border-bottom: 1px solid lighten(@tableBorder, 6%);
+			.Wrap {
+				position: relative;
+			}
+		}
+		&.CategoryTable tbody td {
+			vertical-align: middle;
+		}
+		.Item {
+			&.Read {
+				background: transparent;
+			}
+		}
+	}
+
+	// Data and Message Lists
+	// ----------------------------------------------------------------------------------------------- //
+
+	.DataList {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		&.Comments .Item {
+			.Message {
+				margin: 10px 0 0;
+			}
+		}
+		.Item {
+			&.Activity {
+				padding: 15px 0;
+			}
+			&.Read {
+				background: transparent;
+			}
+			&:first-child {
+				border-top-width: 1px;
+			}
+		}
+		.Item-Header {
+			margin-bottom: 10px;
+		}
+	}
+	
+	.MessageList {
+		.Item-Header {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		.Item {
+			padding: 0 0 15px;
+		}
+	}
+	
+	.Foot + * {
+		margin: 15px 0 0;
+	}
+	
+	// Category Tables
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.CategoryTable {
+		h2 {
+			font-size: 18px;
+		}
+		.CategoryDescription {
+			margin-bottom: 10px;
+		}
+	}
+	
+	.PageDescription {
+		margin: 15px 0;
+		&:empty {
+			display: none;
+		}
+	}
+	
+	.PageControls {
+		min-height: 30px;
+		&:empty {
+			display: none;
+		}
+	}
+	
+	.ChildCategoryList {
+		.Item {
+			padding: 0;
+		}
+		&:nth-child(2) {
+			border-top-width: 1px;
+		}
+		.ItemContent {
+			padding: 8px 0;
+		}
+	}
+	
+	// Leave a Comment
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.CommentForm {
+		.H {
+			display: none;
+		}
+		.FormWrapper {
+			padding: 0 0 0 50px;
+			background: transparent;
+		}
+	}
+	
+	.Form-Header .Author .PhotoWrap {
+		margin: 0;
+	}
+	
+	.MarkupHelp {
+		color: @textColor;
+		margin-right: 15px;
+		line-height: 2.2;
+	}
+	
+	.Buttons {
+		line-height: 30px;
+		.btn {
+			vertical-align: top;
+		}
+	}
+		
+	// Options Menus
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.OptionsMenu {
+		font-size: 100%;
+	}
+	.OptionsMenu .Flyout {
+		right: 0;
+		top: auto;
+		left: auto;
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+	
+	// Profile Page
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.Photo .ProfilePhotoLarge {
+		width: 100%;
+	}
+	
+	.Thumbnail img {
+		max-width: inherit;
+	}
+	
+	.ProfileOptions .btn {
+		vertical-align: top;
+	}
+	
+	table.PreferenceGroup, .Info {
+		width: 100% !important;
+	}
+	
+	// Search Page
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.SearchForm {
+		margin-top: 0;
+		padding: 10px;
+		background: rgba(0,0,0,0.05);
+		.border-radius(4px);
+		form {
+			margin-bottom: 0;
+		}
+		.SiteSearch {
+			max-width: 100%;
+		}
+		input.InputBox {
+			margin: 0;
+			padding-right: 97px;
+			.border-radius(3px);
+		}
+		input.btn {
+			float: right;
+			width: 90px;
+			position: relative;
+			padding: 6px 14px;
+			margin-top: -34px;
+			.border-radius(0 3px 3px 0);
+		}
+	}
+	
+	// Messages Page
+	// ----------------------------------------------------------------------------------------------- //
+	
+	textarea.MultiComplete {
+		height: 30px;
+	}
+	
+	.ac_results {
+		width: auto !important;
+		border: none;
+		background: none;
+		overflow: visible;
+		ul {
+			display: block;
+			position: relative;
+			margin-top: 2px;
+			padding: 5px 0; 
+			li {
+				padding: 3px 20px;
+				font-size: 100%;
+				line-height: 20px;
+				border-bottom: none; }
+		}
+		strong {
+			background: none; }
+		.ac_over {
+			color: @dropdownLinkColorHover;
+			background-color: @dropdownLinkBackgroundHover;
+			#gradient > .vertical(@dropdownLinkBackgroundHover,
+			darken(@dropdownLinkBackgroundHover, 5%));
+		}
+	}
+	
+	.Conversation {
+		.Item:first-child {
+			border-top: none;
+		}
+	}
+	
+	// Pagination
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.PagerWrap {
+		overflow: visible;
+	}
+	
+	.Pager a,
+	.Pager span {
+		margin: 0;
+	}
+	
+	
+// Sidebar Pane
+// --------------------------------------------------------------------------------------------------- //
+	
+	// Profile Menu
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.MeBoxWrap {
+		display: inline-block;
+		margin: 0 !important;
+		.WhoIs {
+			height: 40px;
+		}
+		.WhoIs,
+		.Username,
+		.MeMenu {
+			display: inline-block;
+		}
+		.Username {
+			padding-left: 28px !important;
+		}
+		.MeMenu {
+			padding: 8px;
+		}
+		.PhotoWrap {
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 !important;
+			margin: 0;
+		}
+		.ProfilePhoto {
+			position: absolute;
+			left: 0px;
+			width: 20px;
+			height: 20px;
+			padding: 0;
+			.border-radius(3px);
+		}
+	}
+	
+	.MeMenu {
+		.Flyout {
+			left: inherit;
+			right: -4px;
+			top: 150%;
+			ul {
+				line-height: 20px;
+			}
+			&.FlyoutMenu {
+				padding: 0;
+				.border-radius(3px);
+				a {
+					padding: 0;
+					clear: none;
+					display: inline-block;
+				}
+				a:hover {
+					background: none;
+					color: @linkColorHover;
+				}
+				.PopList .Center {
+					border-bottom: none;
+					a {
+						padding: 6px;
+						display: block;
+					}
+				}
+				.ProfilePhoto {
+					margin-top: 0;
+					width: 34px;
+					height: 34px;
+				}
+			}
+			&:before,
+			&:after {
+				right: 9px;
+				left: auto;
+			}
+			&:before {
+				border-bottom: 7px solid @dropdownBorder;
+			}
+			&:after {
+				border-bottom-color: @dropdownBackground;
+			}
+		}
+	}
+	
+	.MeBox-SignIn {
+		display: none !important;
+	}
+	
+	// Filter Menu
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.FilterMenu {
+		margin: 20px 0;
+		i:before {
+			font-weight: bold;
+		}
+		.active {
+			.Count {
+				background: none;
+			}
+		}
+	}
+	
+	// Panel Panes
+	// ----------------------------------------------------------------------------------------------- //
+	
+	.Box {
+		margin: 15px 0;
+		h4 {
+			border-bottom: 1px solid rgba(0,0,0,.05);
+			padding-bottom: 5px;
+			margin-bottom: 10px;
+			margin-top: 0;
+		}
+		&.GuestBox {
+			margin-top: 0;
+		}
+	}
+	
+	.Aside {
+		position: relative;
+		float: right;
+		top: -1px;
+	}
+	
+	.PanelInfo {
+		.nav-header {
+			padding: 3px 15px;
+		}
+		> li {
+			border: none;
+			margin: 0;
+			padding: 0;
+			&:first-child {
+				border: none;
+			}
+			&.active {
+				.Count {
+					background: none;
+				}
+			}
+		}
+		.Heading {
+			padding: 5px 0;
+		}
+		.ProfilePhotoSmall {
+			float: left;
+			margin-right: 10px;
+			width: 20px;
+			height: 20px;
+		}
+	}
+	
+
+// Modal Windows
+// --------------------------------------------------------------------------------------------------- //
+	
+	.Loading {
+		width: 40px;
+		margin: 0 auto;
+	}
+	
+	.Overlay {
+		display: none;
+		#translucent > .background(black, 0.8);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);
+	}
+	
+	#Popup {
+		.Border {
+			padding: 0;
+		}
+		.Body {
+			background: @bodyBackground;
+			padding: 0;
+		}
+		.modal-header {
+			margin: 0;
+		}
+		.modal-body {
+			padding: 15px;
+		}
+		.Content {
+			.modal-header {
+				font-size: 24px;
+				font-weight: bold;
+				line-height: 40px;
+				margin-bottom: 0;
+			}
+		}
+		.Footer {
+			.modal-footer;
+		}
+		a.Close {
+			top: 12px;
+			right: 15px;
+		}
+		.close {
+			font-size: 22px;
+		}
+		p:not(.modal-body) {
+			padding: 0;
+		}
+		.radio {
+			margin: 0;
+		}
+	}
+	
+	.Buttons-Confirm {
+		text-align: left;
+	}

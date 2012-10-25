@@ -1,0 +1,6 @@
+{
+	"require": {
+		"kriswallsmith/assetic": "dev-master",
+		"leafo/lessphp": "dev-master"
+	}
+}

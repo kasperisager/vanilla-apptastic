@@ -1,0 +1,37 @@
+.btn {
+	vertical-align: top;
+}
+
+.btn-large {
+	font-size: 17.5px;
+	@include border-radius(4px);
+}
+
+.btn-group {
+	vertical-align: top;
+	.btn {
+		font-size: 13px;
+	}
+	.caret {
+		@include opacity(0.3);
+	}
+}
+
+.btn-danger,
+.btn-info {
+	color: white;
+	font-weight: bold;
+}
+
+.dropdown-menu {
+	margin-top: 2px !important;
+}
+
+.Open:not(.btn-group) .btn,
+.Open.btn-group .Handle.btn {
+	@extend .active;
+}
+
+.WriteButton {
+	display: inline-none;
+}

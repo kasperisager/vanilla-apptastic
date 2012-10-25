@@ -1,0 +1,50 @@
+.page-header {
+	@include transition(box-shadow 200ms);
+	
+	padding: 15px 20px;
+	margin: 0;
+	font-size: 24px;
+	line-height: 28px;
+	z-index: 205;
+	border-bottom: 1px solid #E5E6E7;
+	&.scroll {
+		@include box-shadow(0 2px 5px rgba(0, 0, 0, 0.05));
+	
+		background: white;
+	}
+	.title {
+		max-width: 100%;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	.btn {
+		font-weight: normal;
+	}
+	.pull-right {
+		margin-top: 0;
+	}
+}
+
+h2.CommentHeading,
+.Profile h2.H {
+	margin-bottom: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 21px;
+	&.scroll {
+		z-index: 205;
+		background: white;
+		position: fixed;
+		padding-right: 20px;
+		padding-left: 20px;
+		margin: 0 -20px;
+		@include box-shadow(0 2px 5px rgba(0, 0, 0, 0.05));
+	}
+}
+
+.Discussion .PageTitle h1 {
+	margin-bottom: 0;
+	font-size: 24px;
+	line-height: 30px;
+}
