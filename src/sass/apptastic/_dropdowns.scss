@@ -24,18 +24,22 @@
 	z-index: 210;
 }
 
-.DataTable {
-	.Item {
-		position: relative;
-		.Options {
-			position: absolute;
-			top: 50%;
-			right: 0;
-			height: 22px;
-			margin-top: -11px;
-			
-		}
-	}
+.Section-DiscussionList {
+
+    .DataTable {
+    	.Item {
+    		position: relative;
+    		.Options {
+    			position: absolute;
+    			top: 50%;
+    			right: 0;
+    			height: 22px;
+    			margin-top: -11px;
+    			
+    		}
+    	}
+    }
+
 }
 
 .Item {

@@ -9119,6 +9119,9 @@ disabled look for already selected choices in the results dropdown
   margin-top: 0;
   margin-bottom: 0;
 }
+.DataList.Comments {
+  margin-top: 15px;
+}
 .DataList.Comments .Item {
   margin-left: 74px;
 }
@@ -9271,6 +9274,9 @@ disabled look for already selected choices in the results dropdown
   margin-top: 0;
 }
 
+.CommentFormWrap {
+  margin-top: 20px;
+}
 .CommentFormWrap .ProfilePhotoMedium {
   width: 64px;
   height: 64px;
@@ -9348,10 +9354,10 @@ disabled look for already selected choices in the results dropdown
   z-index: 210;
 }
 
-.DataTable .Item {
+.Section-DiscussionList .DataTable .Item {
   position: relative;
 }
-.DataTable .Item .Options {
+.Section-DiscussionList .DataTable .Item .Options {
   position: absolute;
   top: 50%;
   right: 0;
@@ -9631,6 +9637,7 @@ html.no-js a {
 
 header [class*="Sprite"] {
   margin: 0;
+  background-image: url("http://cdn.vanillaforums.com/images/sprites-14-000.png");
 }
 
 .dropdown-menu [class*="Sprite"] {
@@ -9653,17 +9660,11 @@ header [class*="Sprite"] {
   z-index: 205;
   border-bottom: 1px solid #E5E6E7;
 }
-.page-header.scroll {
+.page-header.fixed {
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   background: white;
-}
-.page-header .title {
-  max-width: 100%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .page-header .btn {
   font-weight: normal;
@@ -9672,15 +9673,22 @@ header [class*="Sprite"] {
   margin-top: 0;
 }
 
+.scroll-spacer {
+  max-width: 0;
+}
+
 h2.CommentHeading,
-.Profile h2.H {
+.Profile h2.H,
+.CommentForm h2.H {
   margin-bottom: none;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 0;
   line-height: 21px;
 }
-h2.CommentHeading.scroll,
-.Profile h2.H.scroll {
+h2.CommentHeading.fixed,
+.Profile h2.H.fixed,
+.CommentForm h2.H.fixed {
   z-index: 205;
   background: white;
   position: fixed;
@@ -9690,12 +9698,6 @@ h2.CommentHeading.scroll,
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.Discussion .PageTitle h1 {
-  margin-bottom: 0;
-  font-size: 24px;
-  line-height: 30px;
 }
 
 * {
@@ -9744,12 +9746,17 @@ a:hover {
   font-weight: bold;
 }
 
-.body,
-.sidebar {
-  overflow-y: scroll;
-  overflow-x: visible;
-}
-
 #content .sidebar {
   width: 300px;
+}
+
+.AuthorWrap .PhotoWrap {
+  width: 64px;
+  height: 64px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: grey;
 }

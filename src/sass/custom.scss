@@ -10,3 +10,10 @@
 
 //  Add your customizations beyond this point
 //  -----------------------------------------
+
+.AuthorWrap .PhotoWrap {
+	width: 64px;
+	height: 64px;
+	@include border-radius(3px);
+	background: grey;
+}

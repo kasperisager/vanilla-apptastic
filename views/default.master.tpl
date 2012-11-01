@@ -32,7 +32,7 @@
 			<div class="navbar">
 				<div class="navbar-inner">
 					<div class="container">
-						<a class="brand" href="/">{logo}</a>
+						<a class="brand" href="{link path="/"}">{logo}</a>
 						{searchbox}
 						<ul class="nav">
 							<!-- {dashboard_link} -->
@@ -76,11 +76,13 @@
 				{breadcrumbs}
 			</ul>
 		</section>
-		<section id="content" class=" with-left-sidebar">
+		<section id="content" class="with-left-sidebar">
 			<div class="container">
 				<div class="content">
 					<div id="messages"></div>
 					<div class="main">
+						<h1 class="page-header"></h1>
+						<h2 class="page-subheader"></h2>
 						<section class="body">
 							{asset name="Content"}
 						</section>

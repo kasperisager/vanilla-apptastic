@@ -1,6 +1,6 @@
 jQuery(function() {
 	
-	$(".BoxDiscussionFilter ul, .BoxCategories ul, .BoxProfileFilter ul, .BoxActivityFilter ul")
+	$(".BoxDiscussionFilter ul, .BoxCategories ul, .BoxProfileFilter ul, .BoxActivityFilter ul, .Profile .PanelInfo")
 		.removeClass("PanelInfo FilterMenu")
 		.addClass("nav nav-tabs nav-stacked");
 	

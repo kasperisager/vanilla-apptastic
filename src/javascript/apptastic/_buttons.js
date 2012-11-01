@@ -5,7 +5,9 @@ jQuery(function() {
 		$(this).toggleClass("Button btn");
 	});
 	
-	$(".BigButton").toggleClass("BigButton btn-block btn-large btn-primary");
+	$(".BigButton")
+		.addClass("btn btn-block btn-large btn-primary")
+		.removeClass("BigButton");
 	$(".ClearConversation").toggleClass("btn-primary btn-danger");
 	
 	$(".ButtonGroup").each(function() {

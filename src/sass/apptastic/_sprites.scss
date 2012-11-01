@@ -1,20 +1,21 @@
 [class*="Sprite"] {
-	@include opacity(0.8);
+    @include opacity(0.8);
 }
 
 .btn [class*="Sprite"] {
-	margin: 1px 5px 0 0;
+    margin: 1px 5px 0 0;
 }
 
 header [class*="Sprite"] {
-	margin: 0;
-	
+    margin: 0;
+    background-image: url("http://cdn.vanillaforums.com/images/sprites-14-000.png");
+    
 }
 
 .dropdown-menu [class*="Sprite"] {
-	margin: 3px 2px 0 0;
+    margin: 3px 2px 0 0;
 }
 
 .nav-tabs [class*="Sprite"] {
-	margin: 4px 4px 0 0;
+    margin: 4px 4px 0 0;
 }

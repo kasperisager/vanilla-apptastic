@@ -11,6 +11,7 @@
 	margin-top: 0;
 	margin-bottom: 0;
 	&.Comments {
+		margin-top: 15px;
 		.Item {
 			margin-left: 74px;
 		}
@@ -143,6 +144,7 @@
 }
 
 .CommentFormWrap {
+    margin-top: 20px;
 	.ProfilePhotoMedium {
 		width: 64px;
 		height: 64px;

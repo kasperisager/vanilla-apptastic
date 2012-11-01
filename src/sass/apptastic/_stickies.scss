@@ -7,16 +7,10 @@
 	line-height: 28px;
 	z-index: 205;
 	border-bottom: 1px solid #E5E6E7;
-	&.scroll {
+	&.fixed {
 		@include box-shadow(0 2px 5px rgba(0, 0, 0, 0.05));
-	
+		
 		background: white;
-	}
-	.title {
-		max-width: 100%;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		overflow: hidden;
 	}
 	.btn {
 		font-weight: normal;
@@ -26,13 +20,19 @@
 	}
 }
 
+.scroll-spacer {
+	max-width: 0;
+}
+
 h2.CommentHeading,
-.Profile h2.H {
+.Profile h2.H,
+.CommentForm h2.H {
 	margin-bottom: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	margin-bottom: 0;
 	line-height: 21px;
-	&.scroll {
+	&.fixed {
 		z-index: 205;
 		background: white;
 		position: fixed;
@@ -41,10 +41,4 @@ h2.CommentHeading,
 		margin: 0 -20px;
 		@include box-shadow(0 2px 5px rgba(0, 0, 0, 0.05));
 	}
-}
-
-.Discussion .PageTitle h1 {
-	margin-bottom: 0;
-	font-size: 24px;
-	line-height: 30px;
 }
