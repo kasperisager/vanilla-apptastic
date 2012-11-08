@@ -33,7 +33,7 @@
 				<div class="navbar-inner">
 					<div class="container">
 						<a class="brand" href="{link path="/"}">{logo}</a>
-						{searchbox}
+						{searchbox placeholder="enter your search terms"}
 						<ul class="nav">
 							<!-- {dashboard_link} -->
 							{discussions_link}
