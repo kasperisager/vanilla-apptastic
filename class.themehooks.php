@@ -6,7 +6,7 @@
 
 // Initialize themehooks
 // ----------------------------------------
-class SentryUIThemeHooks implements Gdn_IPlugin {
+class ApptasticThemeHooks implements Gdn_IPlugin {
 	
 	public function Setup() {
 		return TRUE;
