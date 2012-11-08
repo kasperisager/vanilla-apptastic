@@ -9622,6 +9622,13 @@ html.no-js a {
   margin-top: 20px;
 }
 
+.Section-Profile dl.About {
+  margin: 20px 0;
+}
+.Section-Profile form.Activity {
+  margin: 20px 0 0;
+}
+
 .body .Profile {
   max-width: 840px;
 }
