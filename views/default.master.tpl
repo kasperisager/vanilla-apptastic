@@ -60,7 +60,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="{link path="/entry/signin"}">Have an account? 
+								<a class="SignInPopup" href="{link path="/entry/signin"}">Have an account? 
 									<i class="icon-share-alt"></i> Sign in
 								</a>
 							</li>
