@@ -9365,14 +9365,14 @@ disabled look for already selected choices in the results dropdown
   margin-top: -11px;
 }
 
-.Item .Options {
+.Item .OptionsMenu {
   display: none;
 }
-.Item.Open .Options {
-  display: inline-block;
+.Item.Open .OptionsMenu {
+  display: inline;
 }
-.Item:hover .Options {
-  display: inline-block;
+.Item:hover .OptionsMenu {
+  display: inline;
 }
 
 footer {

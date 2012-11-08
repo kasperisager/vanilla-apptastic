@@ -43,14 +43,14 @@
 }
 
 .Item {
-	.Options {
+	.OptionsMenu {
 		display: none;
 		
 	}
-	&.Open .Options {
-		display: inline-block;
+	&.Open .OptionsMenu {
+		display: inline;
 	}
-	&:hover .Options {
-		display: inline-block;
+	&:hover .OptionsMenu {
+		display: inline;
 	}
 }
