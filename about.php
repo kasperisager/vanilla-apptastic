@@ -7,6 +7,7 @@ $ThemeInfo["Apptastic"] = array(
 	"Version" => "0.9.1",
 	"Author" => "Kasper K. Isager",
 	"AuthorEmail" => "kasperisager@gmail.com",
-	"AuthorUrl" => "https://github.com/kasperisager"
+	"AuthorUrl" => "https://github.com/kasperisager",
+	"RequiredApplications" => array("Vanilla" => ">=2.1")
 
 );
