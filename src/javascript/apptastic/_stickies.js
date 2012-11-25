@@ -3,8 +3,6 @@ jQuery(function() {
 	var pageHeader = $(".page-header"),
 		commentHeader = $(".CommentHeading"),
 		replyHeader = $(".CommentForm h2.H"),
-		aboutHeader = $(".About h2.H"),
-		activityHeader = $(".Profile > h2.H"),
 		profileNav = $(".ProfileOptions"),
 		profileBtn = profileNav.find(".ProfileButtons"),
 		discussionNav = $(".MessageList.Discussion .Options"),
@@ -102,24 +100,6 @@ jQuery(function() {
 	
 	replyHeader.scrollToFixed({
     	marginTop: pageHeader.outerHeight(),
-    	spacerClass: "scroll-spacer",
-		fixed: function() {
-		
-			var mainWidth = $(".main").width();
-		
-			$(this)
-				.addClass("fixed")
-				.css("width", mainWidth);
-		},
-		unfixed: function() {
-			$(this)
-				.removeClass("fixed")
-				.width();
-		}
-	});
-
-	activityHeader.scrollToFixed({
-		marginTop: pageHeader.outerHeight(),
     	spacerClass: "scroll-spacer",
 		fixed: function() {
 		

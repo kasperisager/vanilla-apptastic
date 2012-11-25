@@ -1,8 +1,8 @@
 jQuery(function() {
 	
-	$(".Section-Discussion #PagerAfter").remove();
+	$("#PagerAfter").remove();
 	
-	$("#PagerBefore, #PagerAfter").each(function() {
+	$("#PagerBefore").each(function() {
 		
 		$(this).addClass("btn-group");
 		$(this).children().addClass("btn btn-mini");

@@ -9318,9 +9318,6 @@ disabled look for already selected choices in the results dropdown
   -o-border-radius: 0 0 2px 2px;
   border-radius: 0 0 2px 2px;
 }
-.Reactions:empty {
-  display: none;
-}
 
 #wysihtml5-toolbar {
   margin-bottom: 10px;
@@ -9635,6 +9632,28 @@ html.no-js a {
 
 .body .Profile {
   max-width: 840px;
+}
+
+[class*="Sprite"] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+
+.btn [class*="Sprite"] {
+  margin: 1px 5px 0 0;
+}
+
+header [class*="Sprite"] {
+  margin: 0;
+  background-image: url("http://cdn.vanillaforums.com/images/sprites-14-000.png");
+}
+
+.dropdown-menu [class*="Sprite"] {
+  margin: 3px 2px 0 0;
+}
+
+.nav-tabs [class*="Sprite"] {
+  margin: 4px 4px 0 0;
 }
 
 .page-header {

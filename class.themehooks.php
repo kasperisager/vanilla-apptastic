@@ -2,13 +2,12 @@
 
 // Development mode
 // ----------------------------------------
-// 
-require "assets.php";
+// require "assets.php";
 
 // Initialize themehooks
 // ----------------------------------------
 class ApptasticThemeHooks implements Gdn_IPlugin {
-
+	
 	public function Setup() {
 		return TRUE;
 	}
