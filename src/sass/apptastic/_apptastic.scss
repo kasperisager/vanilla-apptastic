@@ -14,7 +14,7 @@
 	@import "nojs";
 	@import "panels";
 	@import "profile";
-	@import "sprites";
+	//@import "sprites";
 	@import "stickies";
 
 // Assorted code will be put here for the time being
@@ -74,4 +74,11 @@ a {
 .Active,
 .wysihtml5-command-active {
 	@extend .active;
+}
+
+.AuthorWrap .PhotoWrap {
+	width: 64px;
+	height: 64px;
+	@include border-radius(3px);
+	background: grey;
 }
