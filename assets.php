@@ -37,25 +37,25 @@ $js = new AssetCollection(array(
 	
 	new FileAsset(__DIR__."/src/javascript/custom.js",
 	array(
-			new GoogleClosure\CompilerApiFilter()
+			//new GoogleClosure\CompilerApiFilter()
 		)
 	),
 	
 	new GlobAsset(__DIR__."/src/javascript/apptastic/_*.js",
 		array(
-			new GoogleClosure\CompilerApiFilter()
+			//new GoogleClosure\CompilerApiFilter()
 		)
 	),
 
 	new GlobAsset(__DIR__."/src/javascript/plugins/*.js",
 		array(
-			new GoogleClosure\CompilerApiFilter()
+			//new GoogleClosure\CompilerApiFilter()
 		)
 	),
 
 	new GlobAsset(__DIR__."/src/javascript/bootstrap/*.js",
 		array(
-			new GoogleClosure\CompilerApiFilter()
+			//new GoogleClosure\CompilerApiFilter()
 		)
 	)
 	
