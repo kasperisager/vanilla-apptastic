@@ -3267,7 +3267,6 @@ input[type="button"].btn-block {
 }
 
 .btn-primary:hover,
-.btn-primary:active,
 .btn-primary.active,
 .Open:not(.btn-group) .btn-primary.btn,
 .Open.btn-group .btn-primary.Handle.btn,
@@ -3281,7 +3280,6 @@ input[type="button"].btn-block {
 }
 
 .btn-primary:active,
-.btn-primary.active,
 .Open:not(.btn-group) .btn-primary.btn,
 .Open.btn-group .btn-primary.Handle.btn,
 .btn-primary.Active,
@@ -9748,4 +9746,15 @@ a:hover {
   -o-border-radius: 3px;
   border-radius: 3px;
   background: grey;
+}
+
+
+/* A few fixes by Chris ireland */
+table thead tr td.BigCountDiscussions {
+  font-size:13px;
+}
+
+.Connect h1,
+.Connect {
+  color: #FFF;
 }
