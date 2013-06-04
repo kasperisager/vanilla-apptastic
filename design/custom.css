@@ -9747,27 +9747,3 @@ a:hover {
   border-radius: 3px;
   background: grey;
 }
-
-
-/* A few fixes by Chris ireland */
-table thead tr td.BigCountDiscussions {
-  font-size:13px;
-}
-
-.Connect h1,
-.Connect {
-  color: #FFF;
-}
-
-.CurrentUploader {
-  overflow:visible;
-}
-
-.AdminCheck {
-  margin-left: 5px;
-}
-
-.BarWrap {
-  background: transparent;
-  border: 0px;
-}
