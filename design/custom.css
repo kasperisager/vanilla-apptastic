@@ -9766,3 +9766,8 @@ table thead tr td.BigCountDiscussions {
 .AdminCheck {
   margin-left: 5px;
 }
+
+.BarWrap {
+  background: transparent;
+  border: 0px;
+}
