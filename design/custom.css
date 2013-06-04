@@ -9758,3 +9758,11 @@ table thead tr td.BigCountDiscussions {
 .Connect {
   color: #FFF;
 }
+
+.CurrentUploader {
+  overflow:visible;
+}
+
+.AdminCheck {
+  margin-left: 5px;
+}
