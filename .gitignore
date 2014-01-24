@@ -1,5 +1,3 @@
-*.DS_Store
 *.lock
 *.phar
 vendor/
-.sass-cache/
