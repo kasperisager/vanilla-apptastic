@@ -1,105 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-	{asset name="Head"}
-</head>
-<body id="{$BodyID}" class="{$BodyClass}">
-	
-	<noscript>
-		
-		<table height="100%" width="100%">
-			<tbody><tr>
-				<td align="center" valign="middle" style="vertical-align: middle;">
-					<h1 id="l10n_title">Whooooops!</h1>
-					<div class="sorry" style="width:300px;">
-						<p id="l10n_line_1">
-							Looks like you've disabled Javascript in your browser.
-						</p>
-						<p id="l10n_line_2">
-							<a href="https://support.google.com/adsense/bin/answer.py?hl=en&answer=12654">
-								Please enable it again!
-							</a>
-						</p>
-					</div>
-				</td>
-			</tr>
-		</tbody></table>
-	
-	</noscript>
-	
-	<div id="Frame">
-		<header id="header">
-			<div class="navbar">
-				<div class="navbar-inner">
-					<div class="container">
-						<a class="brand" href="{link path="/"}">{logo}</a>
-						{searchbox placeholder="enter your search terms"}
-						<ul class="nav">
-							<!-- {dashboard_link} -->
-							{discussions_link}
-							{activity_link}
-							<!-- {inbox_link} -->
-							{custom_menu}
-							<!-- {profile_link}
-							{signinout_link}  -->
-						</ul>
-						<ul class="nav pull-right">
-							{if $User.SignedIn}
-							<li class="MeBoxWrap">
-								{module name="MeModule"}
-							</li>
-							<li>
-								{link path="signinout"}
-							</li>
-							</li>
-							{/if}
-							{if !$User.SignedIn}
-							<li>
-								<a href="{link path="/entry/register"}"> 
-									<i class="icon-edit"></i> Sign up
-								</a>
-							</li>
-							<li>
-								<a class="SignInPopup" href="{link path="/entry/signin"}">Have an account? 
-									<i class="icon-share-alt"></i> Sign in
-								</a>
-							</li>
-							{/if}
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
-		<section id="page-header" class="toolbar">
-			<!--<a href="/account/projects/new/" class="btn pull-right btn-primary">Create a new project</a>-->
-			<ul class="breadcrumb">
-				{breadcrumbs}
-			</ul>
-		</section>
-		<section id="content" class="with-left-sidebar">
-			<div class="container">
-				<div class="content">
-					<div id="messages"></div>
-					<div class="main">
-						<h1 class="page-header"></h1>
-						<h2 class="page-subheader"></h2>
-						<section class="body">
-							{asset name="Content"}
-						</section>
-					</div>
-					<div class="sidebar">
-						{asset name="Panel"}
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer>
-			<div class="container">
-				Apptastic [<a>Work title</a>] | A super sleek and modern interface for <a href="http://vanillaforums.org/">Vanilla Forums</a> | Made by <a href="http://github.com/kasperisager">Kasper K. Isager</a>
-				{asset name="Foot"}
-			</div>
-		</footer>
-	</div>
-	{event name="AfterBody"}
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {asset name="Head"}
+
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="{$BodyID}" class="{$BodyClass}">
+
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="{link path="home"}">{logo}</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-wrap">
+
+      <nav class="page-toolbar" role="navigation">
+        {module name="SiteNavModule" cssClass="nav"}
+      </nav>
+
+      <aside class="page-sidebar" role="complementary">
+        {asset name="Panel"}
+      </aside>
+
+      <main class="page-content-outer" role="main">
+        <div class="page-title-outer">
+          <div class="page-title js-page-title">{$Title}</div>
+        </div>
+        <div class="page-content-inner">
+          <div class="page-content">
+            {asset name="Content"}
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    {asset name="Foot"}
+    {event name="AfterBody"}
+
+  </body>
 </html>

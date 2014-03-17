@@ -1,0 +1,7 @@
+{
+  "name": "vanilla-apptastic",
+  "private": true,
+  "dependencies": {
+    "vanilla-bootstrap": "kasperisager/vanilla-bootstrap#master"
+  }
+}

@@ -1,0 +1,191 @@
+/*!
+ * Apptastic
+ *
+ * @author    Kasper Isager <kasperisager@gmail.com>
+ * @license   http://opensource.org/licenses/MIT MIT
+ * @copyright 2014 © Kasper Kronborg Isager
+ */
+
+//
+// # Apptastic
+//
+// No styleguide reference.
+
+// Paths
+// -----------------------------------------------------------------------------
+@vanilla-bootstrap : "vanilla-bootstrap/less";
+
+// Library
+// -----------------------------------------------------------------------------
+@import "@{vanilla-bootstrap}/style";
+
+// Customizations
+// -----------------------------------------------------------------------------
+@import "variables";
+
+html,
+body {
+  height: 100%;
+}
+
+.container-fluid {
+  &:extend(.container-fluid all);
+}
+
+.navbar-default {
+  #gradient > .vertical(#56a0dd, #4194d9);
+  box-shadow: 0 1px #74b1e3 inset;
+}
+
+.page-wrap {
+  height: 100%;
+  overflow: hidden;
+  padding-top: (@navbar-height + 1px);
+  margin-top: -(@navbar-height + 1px);
+  background-color: #fff;
+}
+
+.page-sidebar,
+.page-toolbar,
+.page-content-inner {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.page-sidebar {
+  float: right;
+  width: 340px;
+  max-width: 340px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fdfdfe;
+  border-left: #cbcbcb solid 1px;
+  box-shadow: 5px 0 5px -3px fade(#000, 5%) inset;
+}
+
+.page-toolbar {
+  float: left;
+  width: 200px;
+  max-width: 200px;
+  background-color: #333f3d;
+  border-right: 1px solid #444;
+  box-shadow: -6px 8px 12px 1px fade(#000, .5%) inset;
+}
+
+.page-content,
+.page-content-outer {
+  float: none;
+  width: auto;
+}
+
+.page-content-outer {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 50px;
+  margin-right: 340px;
+  margin-left: 200px;
+}
+
+.page-content-inner {
+  float: left;
+  width: 100%;
+}
+
+.page-content,
+.page-title {
+  max-width: 960px;
+  &:extend(.clearfix all);
+}
+
+.page-title-outer {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 15px 30px;
+  font-size: @font-size-large;
+  line-height: @line-height-computed;
+  background-color: #f2f5fa;
+  border-bottom: #cfd2d6 solid 1px;
+  box-shadow: 0 2px 5px fade(#000, 4%);
+}
+
+.btn {
+  box-shadow: inset 0 1px fade(#fff, 20%), 0 1px 2px fade(#000, 10%);
+
+  &:active {
+    box-shadow: inset 0 0 6px 1px fade(#000, 10%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-default {
+  text-shadow: 0 1px #fff;
+  #gradient > .vertical(#f7f9fc, #ebedf1);
+}
+
+.btn-primary {
+  text-shadow: 0 -1px #226dab;
+  #gradient > .vertical(#549fdc, #2d88d4);
+}
+
+.btn-danger {
+  text-shadow: 0 -1px #c12e2a;
+  #gradient > .vertical(#d9534f, #c12e2a);
+}
+
+.btn-link {
+  box-shadow: none;
+}
+
+.panel-heading {
+  box-shadow: 0 2px 5px fade(#000, 4%);
+}
+
+.nav-link {
+  padding: 3px 15px;
+  font-weight: 300;
+  color: #eee;
+  text-shadow: 0 1px #000;
+  border-top: 1px solid #333f3d;
+  border-bottom: 1px solid #333f3d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  &:extend(.nav > li > a);
+
+  &,
+  &:hover {
+    color: #eee;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    background: #28312f;
+    border-top: 1px solid #232b2a;
+    border-bottom: 1px solid #3e4d4b;
+  }
+}
+
+.nav-group {
+  margin-top: 9px;
+
+  h3 {
+    padding: 3px 15px;
+    margin: 0;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: @line-height-computed;
+    color: #ccc;
+    text-transform: uppercase;
+    text-shadow: 0 1px #222;
+  }
+}
